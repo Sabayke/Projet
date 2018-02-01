@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+body{background-image :url("commander-en-ligne-spiq.jpg");
+}
+	<title> Commandes</title>
+
+	<script type="text/javascript">
+
+	function myFunction(x) {
+	//y=document.getElementsByTagName('table')[0].getElementsByTagName('tr')[1].cells[1];
+	//alert(y.value);
+	var produits = new Array("TV", "Micro-onde", "referigerateur","Mini-bar","Fauteuil-cuir","Fauteuil","Maquette");
+	var pu = new Array(150000,50000,100000,50000,400000,100000,100000);
+     var produit = document.getElementById('produit').value;
+     rang = produits.indexOf(produit);
+     if (rang>=0) {
+     	pu = document.getElementById('pu').value = pu[rang];
+     	document.getElementById('montant').value = pu*x.value;
+     	}else alert("Svp! le produit n\'existe pas");
+     }
+	</script>
+</head>
+<body> 
+<center>
+<fieldset style= "background-color : Beige; width: 606px;">
+<h3> Ecran: DETAIL COMMANDES </h3> <br>
+</fieldset>
+<fieldset style= "background-color : Beige; width: 403px;">
+<p>Date : </p>
+<p>Commande n°:</p>
+<p>Client:</p>
+<p>TVA 20%</p>
+<table>
+  <tr>
+    <th>Produit</th>
+    <th>Qte</th>
+    <th>PU</th>
+	<th>Montant</th>
+  </tr>
+  <tr>
+  <td> <input = "text" name = "" id="produit"></td>
+  <td> <input = "text" name = "" oninput="myFunction(this)"> </td>
+  <td> <input = "text" name = "" id="pu"> </td>
+  <td> <input = "text" name = "" id="montant"> </td>
+  </tr>
+  <tr>
+  <td> <input = "text" name = "" class="1" id="produit1"></td>
+  <td> <input = "text" name = "" class="1" oninput="myFunction(this)"></td>
+  <td> <input = "text" name = "" class="1"></td>
+  <td> <input = "text" name = "" class="1"></td>
+  </tr>
+  <tr>
+  <td> <input = "text" name = "" class=""></td>
+  <td> <input = "text" name = "" class="" oninput="myFunction(this)"></td>
+  <td> <input = "text" name = "" class=""></td>
+  <td> <input = "text" name = "" class=""></td>
+  </tr>
+  <tr>
+  <td> <input = "text" name = "" class=""></td>
+  <td> <input = "text" name = "" class="" oninput="myFunction(this)"></td>
+  <td> <input = "text" name = "" class=""></td>
+  <td> <input = "text" name = "" class=""></td>
+  </tr>
+  <tr>
+  	<td></td>
+  	<td></td>
+  	<td>Total Brut : </td>
+  	<td><input = "text" name = "" value = ""></td>
+  </tr>
+    <tr>
+    <td></td>
+    <td></td>
+  	<td> Net : </td>
+  	<td><input = "text" name = "" value = ""></td>
+  </tr>
+  
+</table>
+<!--
+<a Produit: style = "float:right"> </a>
+ <select name="produit" id="E"style = "float:right">
+  <option value=" "> TV  </option>
+ <option value="Moquete">Moquete</option>
+  <option value="Champoin">Champoin</option>
+  <option value="Tapis">Tapis</option>
+  <option value="Chocolat">Chocolat</option>
+  <option value="Viande">Viande</option>
+  <option value="Ordinateur">Ordinateur</option>
+</select>
+--!>
+<!--
+ <p>
+<button type="button"
+Click me to display Date and Time.</button>
+
+
+   <button 
+			type="button"
+			Enreg cmde
+   </p>
+   
+	 <p>
+			type="button"
+			Annuler cmde
+	
+	</p>
+			type="button"
+			<a href="page2.html">Nouvelle cmde<a/>
+	
+     
+			type="button"
+			Quitter 
+	</button>
+	</p>
+	!-->	 
+
+	<table>
+	<th>
+			<td><input type="button" name="Enreg cmde" value="Enreg cmde"> </td>
+			<td><input type="button" name="Annuler cmde" value="Annuler cmde"> </td>
+			<td><input type="button" name="Nouvelle cmde" value="Nouvelle cmde"> </td>
+			<td><input type="button" name="Quitter " value="Quitter"> </td>
+	</th>		
+	</table>
+	
+​</fieldset>
+</center>
+</body>
+</html>
